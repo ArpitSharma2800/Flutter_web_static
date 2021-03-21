@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:staticwebpage/Dashboard/Dashboard.dart';
 import 'package:staticwebpage/Navigation/NavigationBar.dart';
 
 void main() {
@@ -15,7 +16,10 @@ class MyApp extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: Stack(
           children: [
+            //sidebar
             NavigationBar(),
+            //dashboard
+            Dashboard(),
           ],
         ),
       ),
