@@ -43,6 +43,20 @@ class Dashboard extends StatelessWidget {
                         progressIndicatorColor: Colors.redAccent[100],
                         icon: Feather.moon,
                       ),
+                      ProjectProgressCard(
+                        color: Color(0xff6C6CE5),
+                        projectName: 'Delivery Club',
+                        percentComplete: '78%',
+                        progressIndicatorColor: Colors.blue[200],
+                        icon: Feather.truck,
+                      ),
+                      ProjectProgressCard(
+                        color: Color(0xffFAAA1E),
+                        projectName: 'Travel Comrode',
+                        percentComplete: '82%',
+                        progressIndicatorColor: Colors.amber[200],
+                        icon: Icons.local_airport,
+                      ),
                     ],
                   ))
             ],
