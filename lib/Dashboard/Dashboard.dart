@@ -3,7 +3,7 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:staticwebpage/Dashboard/src/Tabs.dart';
 import 'package:staticwebpage/Dashboard/src/progressCard.dart';
-// import 'package:staticwebpage/Dashboard/src/projectStatisticsCards.dart';
+import 'package:staticwebpage/Dashboard/src/projectStatisticsCards.dart';
 import 'package:staticwebpage/Dashboard/src/sharedItems.dart';
 import 'package:staticwebpage/Dashboard/src/subHeader.dart';
 
@@ -89,7 +89,7 @@ class Dashboard extends StatelessWidget {
               SubHeader(
                 title: 'Project Statistics',
               ),
-              // ProjectStatisticsCards(),
+              ProjectStatisticsCards(),
             ],
           ),
         ));
