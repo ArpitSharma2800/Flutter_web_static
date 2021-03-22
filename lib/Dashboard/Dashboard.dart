@@ -3,6 +3,9 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:staticwebpage/Dashboard/src/Tabs.dart';
 import 'package:staticwebpage/Dashboard/src/progressCard.dart';
+// import 'package:staticwebpage/Dashboard/src/projectStatisticsCards.dart';
+import 'package:staticwebpage/Dashboard/src/sharedItems.dart';
+import 'package:staticwebpage/Dashboard/src/subHeader.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key key}) : super(key: key);
@@ -58,7 +61,35 @@ class Dashboard extends StatelessWidget {
                         icon: Icons.local_airport,
                       ),
                     ],
-                  ))
+                  )),
+              SubHeader(
+                title: 'Shared Files',
+              ),
+              SharedFilesItem(
+                color: Colors.blue,
+                sharedFileName: 'Company Guidelines',
+                members: '28 members',
+                et: '10 Oct 2019',
+                fileSize: '2.3 MB',
+              ),
+              SharedFilesItem(
+                color: Colors.amber,
+                sharedFileName: 'Company Policy',
+                members: '30 members',
+                et: '27 Sep 2019',
+                fileSize: '4.2 MB',
+              ),
+              SharedFilesItem(
+                color: Colors.red,
+                sharedFileName: 'Wireframes',
+                members: '14 members',
+                et: '08 Oct 2019',
+                fileSize: '1.6 MB',
+              ),
+              SubHeader(
+                title: 'Project Statistics',
+              ),
+              // ProjectStatisticsCards(),
             ],
           ),
         ));
